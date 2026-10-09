@@ -1,0 +1,6 @@
+# Outputs the notebook regenerates every run
+financial_instruments_catalog.csv
+financial_instruments_catalog.xlsx
+.ipynb_checkpoints/
+__pycache__/
+.venv/
