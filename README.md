@@ -31,3 +31,20 @@ The notebook checks itself where a closed form exists: the BDT tree reprices the
 * Risk scores are expert judgement on a typical instance of each instrument, not a regulatory SRI for a specific product.
 * Market data (curves, spots, vols) is illustrative. Replace it before using any number for a decision.
 * Swedish tax parameters (ISK) change yearly. Verify on skatteverket.se.
+
+---
+
+# Option Pricing Atlas
+
+Companion notebook: **58 option pricing models and methods** with when they are used, pros and cons, scores (accuracy, speed, flexibility, smile, ease), 40 working pricers and 23 charts.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AntonAlin/financial_instruments_atlas/blob/main/option_pricing_atlas.ipynb)
+
+| Part | Content |
+|---|---|
+| Catalog | Models (BSM, Heston, SABR, Dupire, rough Bergomi, Hull-White...), methods (trees, PDE, Monte Carlo, FFT, COS) and approximations (BAW, Bjerksund-Stensland, Kirk, Vanna-Volga) |
+| Validation | Every pricer checked against a closed form or an independent method (series vs Fourier, MC vs closed form, local vol MC repricing its own surface) |
+| Visuals | Scorecard heatmap, smile gallery, Heston parameter effects, implied vs local vol surfaces, rough vs classical skew, convergence charts, exercise boundary, calibration shoot-out, speed vs accuracy benchmark |
+| Helpers | `describe("heston")` for a model card + live demo, `recommend(...)` for a shortlist given product features |
+
+Runtime about 2 minutes, mostly Monte Carlo. scikit-learn is optional (neural surrogate demo only).

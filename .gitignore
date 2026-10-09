@@ -4,3 +4,5 @@ financial_instruments_catalog.xlsx
 .ipynb_checkpoints/
 __pycache__/
 .venv/
+option_pricing_models_catalog.csv
+option_pricing_benchmark.csv
